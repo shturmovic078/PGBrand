@@ -91,6 +91,7 @@ public class MobilePreferenceCenter {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy S5");
 		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
 		  driver = new RemoteWebDriver(new URL(URL), caps);
@@ -118,6 +119,7 @@ public class MobilePreferenceCenter {
 		 caps.setCapability("platform", "MAC");
 		 caps.setCapability("device", "iPhone 5S");
 		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.debug", "local");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
 		  driver = new RemoteWebDriver(new URL(URL), caps);
