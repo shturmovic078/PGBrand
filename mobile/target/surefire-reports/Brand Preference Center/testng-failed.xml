@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Brand Preference Center]">
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="appium.mobile.AllProducts">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="variantName"/>
+        </methods>
+      </class> <!-- appium.mobile.AllProducts -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Brand Preference Center] -->

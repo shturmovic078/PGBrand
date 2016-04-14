@@ -1,0 +1,32 @@
+package android.mobile;
+
+import java.net.MalformedURLException;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+public class TestLogin {
+	
+	
+
+	public static void main (String[] args)  throws MalformedURLException
+	{
+		
+	Profile[] theProfile={
+			
+			new SetLogin("a","b","c"),
+			new SetLogin("d","e","f")
+	};
+		
+    
+	Profile makeChoice;
+	makeChoice=theProfile[0];
+	
+	
+    
+    
+    
+  
+		
+	}
+
+}

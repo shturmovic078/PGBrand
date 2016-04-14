@@ -1,0 +1,27 @@
+package android.mobile;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class Profile {
+	public Profile (String aType) throws MalformedURLException
+	{
+		
+	
+		type = new String (aType);
+	}
+	
+	
+	
+	
+
+
+
+	private String type;
+
+
+}

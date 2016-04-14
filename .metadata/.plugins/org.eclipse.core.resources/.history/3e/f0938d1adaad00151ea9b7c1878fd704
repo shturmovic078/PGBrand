@@ -1,0 +1,52 @@
+package android.mobile;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class SetLogin extends Profile {
+	
+	private String name;
+	private String password;
+	private String login;
+	public SetLogin (String aName, String aPassword, String aLogin) throws MalformedURLException{
+	
+	super("Login");
+	name = aName;
+	password = aPassword;
+	login = aLogin;
+	}
+	
+	
+	public String toString()
+	{
+	
+		return "The username is " + name + " & password is " + password +" I will click on the " + login ;
+	}
+	
+	
+	@Test
+	public void setLogin() throws MalformedURLException
+	{
+		getDriver().findElement(By.id("phsmartphonebody_0_username")).sendKeys(name);
+		 getDriver().findElement(By.id("phsmartphonebody_0_password")).clear();
+		 getDriver().findElement(By.id("phsmartphonebody_0_password")).sendKeys(password);
+		 getDriver().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 getDriver().findElement(By.id(login)).click();
+		 try {
+			getDriver().manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+	}
+
+}
