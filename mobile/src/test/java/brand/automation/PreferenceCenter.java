@@ -73,13 +73,15 @@ public class PreferenceCenter {
 		  
 		  
 		  
-		 if (browser.equals("windows7IE10")) {
+		 if (browser.equals("windows7IE11")) {
 			  driver=windows7IE10();
 			 
 			}
 		 else if (browser.equals("iPadMini")){
 			 driver=iPadMini();
 		 }
+		 
+		 
 		}
 
 		public WebDriver windows7IE10() throws MalformedURLException  
@@ -89,7 +91,7 @@ public class PreferenceCenter {
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "10.0");
+		 caps.setCapability("browser_version", "11.0");
 		 caps.setCapability("os", "Windows");
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
@@ -138,7 +140,7 @@ public class PreferenceCenter {
 	    
 	      
 	 } 
-
+		
 	  
 	  @Test(priority=1)
 	  public void invalidLogin() throws IOException, InterruptedException{
