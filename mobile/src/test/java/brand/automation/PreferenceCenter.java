@@ -142,7 +142,7 @@ public class PreferenceCenter {
 	  
 	  @Test(priority=1)
 	  public void invalidLogin() throws IOException, InterruptedException{
-		   name=""+ folder+"/" + brand +"_"+ browser +"_" + "invalid_login.png";
+		   name= "invalid_login.png";
 	  	System.out.println("Let me click on login");
 	   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 	   driver.findElement(By.className("event_profile_login")).click();
@@ -168,7 +168,7 @@ public class PreferenceCenter {
 	  
 	  @Test(priority=2)
 	  public void validLogin() throws IOException{
-		    name=""+ folder+"/" + brand +"_"+ browser +"_" + "valid_login.png";
+		    name= "valid_login.png";
 		 
 		  System.out.println("Let me check on valid login");
 		   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
@@ -194,7 +194,7 @@ public class PreferenceCenter {
 	  @Test(priority=3)
 	  public void resetPassword() throws IOException{
 		  
-		    name=""+ folder+"/" + brand +"_"+ browser +"_" + "invalid_reset_password.png";
+		    name= "invalid_reset_password.png";
 		  System.out.println("Let me reset password");
 		  driver.findElement(By.id("phdesktopbody_0_HlinkEdit")).click();
 		   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
@@ -219,7 +219,7 @@ public class PreferenceCenter {
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		  assertText();
 	      takeScreenshot(name);
-	        name=""+ folder+"/" + brand +"_"+ browser +"_" + "valid_reset_password.png";
+	        name= "valid_reset_password.png";
 	      driver.findElement(By.name("phdesktopbody_0$username")).clear();
 		  driver.findElement(By.name("phdesktopbody_0$username")).sendKeys("albert.golubev@pkt.com");
 		  driver.findElement(By.name("phdesktopbody_0$zipcode")).clear();
@@ -241,7 +241,7 @@ public class PreferenceCenter {
 	  @Test(priority=4)
 	  public void setPassword() throws IOException{
 		  
-		    name=""+ folder+"/" + brand +"_"+ browser +"_" + "set_password.png";
+		    name= "set_password.png";
 		  System.out.println("Let me reset set password");
 		   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		 
@@ -261,7 +261,7 @@ public class PreferenceCenter {
 		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		  assertText();
 	      takeScreenshot(name);
-	        name=""+ folder+"/" + brand +"_"+ browser +"_" + "valid_set_password.png";
+	        name= "valid_set_password.png";
 	        
 	        id="phdesktopbody_0_revpassword";
 			  actualText=driver.findElement(By.id(id)).getText();
@@ -270,7 +270,7 @@ public class PreferenceCenter {
 			  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			  assertText();
 		      takeScreenshot(name);
-		        name=""+ folder+"/" + brand +"_"+ browser +"_" + "blank_password.png";
+		        name= "blank_password.png";
 		        driver.findElement(By.name("phdesktopbody_0$password")).sendKeys("");
 				  driver.findElement(By.name("phdesktopbody_0$ResetSubmitBtn")).click();
 				  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -281,7 +281,7 @@ public class PreferenceCenter {
 				  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 				  assertText();
 			      takeScreenshot(name);
-			        name=""+ folder+"/" + brand +"_"+ browser +"_" + "valid_set_password.png";
+			        name= "valid_set_password.png";
 			        
 			        
 	      driver.findElement(By.name("phdesktopbody_0$password")).clear();
@@ -295,7 +295,7 @@ public class PreferenceCenter {
 		  assertText();
 	      takeScreenshot(name);
 	      
-	       name=""+ folder+"/" + brand +"_"+ browser +"_" + "after_reset_password.png";
+	       name= "after_reset_password.png";
 	       
 	     
 	      driver.findElement(By.name("phdesktopbody_0$username")).sendKeys("albert.golubev@pkt.com");
