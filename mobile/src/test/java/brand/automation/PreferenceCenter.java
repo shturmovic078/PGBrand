@@ -69,7 +69,7 @@ public class PreferenceCenter {
 	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
 			browser = System.getProperty("Browser");
-		  
+			System.out.println("The Browser is  " +browser);
 		  
 		  
 		  
