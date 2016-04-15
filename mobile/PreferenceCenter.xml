@@ -4,7 +4,7 @@
 <suite name="Preference Center">
    <test name="Preference Center">
    
-      <parameter name="browser" value="windows7IE10"/> 
+      
     
       <classes>
          <class name="brand.automation.PreferenceCenter" />
@@ -12,15 +12,6 @@
       
    </test>
    
-   <test name="Preference Center">
-   
-   
-      <parameter name="browser" value="iPadMini"/> 
-      <classes>
-         <class name="brand.automation.PreferenceCenter" />
-      </classes>
-      
-   </test>
    
   
    
