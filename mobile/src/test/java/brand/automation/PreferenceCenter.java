@@ -68,7 +68,7 @@ public class PreferenceCenter {
 	  @BeforeTest
 	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
-		  
+			browser = System.getProperty("Browser");
 		  
 		  
 		  
