@@ -74,17 +74,54 @@ public class PreferenceCenter {
 		  
 		  
 		 if (browser.equals("windows7IE11")) {
-			  driver=windows7IE10();
+			  driver=windows7IE11();
 			 
 			}
 		 else if (browser.equals("iPadMini")){
 			 driver=iPadMini();
 		 }
+		 else if (browser.equals("windows7Firefox46")){
+			 driver=windows7Firefox46();
+		 }
 		 
-		 
+		 else if (browser.equals("windows7Chrome49")){
+			 driver=windows7Firefox46();
+		 }
+		 else if (browser.equals("safari9")){
+			 driver=safari9();
+		 }
 		}
 
-		public WebDriver windows7IE10() throws MalformedURLException  
+		public WebDriver safari9() throws MalformedURLException  
+		 {  
+		  
+			 System.out.println("Let me run in Windows 7 IE10");
+			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+			 DesiredCapabilities caps = new DesiredCapabilities();
+			 caps.setCapability("browser", "Safari");
+			 caps.setCapability("browser_version", "9.0");
+			 caps.setCapability("os", "OS X");
+			 caps.setCapability("os_version", "El Capitan");
+			 caps.setCapability("resolution", "1024x768");
+			 caps.setCapability("browserstack.debug", "true");
+			 caps.setCapability("browserstack.local", "true");
+			 caps.setCapability("browserstack.selenium_version", "2.47.1");
+			 caps.setCapability("acceptSslCerts", "true");
+			  driver = new RemoteWebDriver(new URL(URL), caps);
+		      browser="windows7IE10";
+		      driver.get(System.getProperty("BrandUrl"));
+		      brand = System.getProperty("Brand");
+		  
+
+		  	System.out.println("The String is " +brand);
+		      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		      return driver;
+		   
+		    
+		      
+		 } 
+		
+		public WebDriver windows7IE11() throws MalformedURLException  
 	 {  
 	  
 		 System.out.println("Let me run in Windows 7 IE10");
@@ -112,6 +149,65 @@ public class PreferenceCenter {
 	    
 	      
 	 } 
+		
+		public WebDriver windows7Chrome49() throws MalformedURLException  
+		 {  
+		  
+			 System.out.println("Let me run in Windows 7 Chrome49");
+			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+			 DesiredCapabilities caps = new DesiredCapabilities();
+			 caps.setCapability("browser", "Chrome");
+			 caps.setCapability("browser_version", "49.0");
+			 caps.setCapability("os", "Windows");
+			 caps.setCapability("os_version", "7");
+			 caps.setCapability("resolution", "1024x768");
+			 caps.setCapability("browserstack.debug", "true");
+			 caps.setCapability("browserstack.local", "true");
+			 caps.setCapability("browserstack.selenium_version", "2.47.1");
+			 caps.setCapability("acceptSslCerts", "true");
+			  driver = new RemoteWebDriver(new URL(URL), caps);
+		      browser="windows7IE10";
+		      driver.get(System.getProperty("BrandUrl"));
+		      brand = System.getProperty("Brand");
+		  
+
+		  	System.out.println("The String is " +brand);
+		      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		      return driver;
+		   
+		    
+		      
+		 } 
+		
+		public WebDriver windows7Firefox46() throws MalformedURLException  
+		 {  
+		  
+			 System.out.println("Let me run in Windows 7 Firefox46");
+			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+			 DesiredCapabilities caps = new DesiredCapabilities();
+			 caps.setCapability("browser", "Firefox");
+			 caps.setCapability("browser_version", "45.0");
+			 caps.setCapability("os", "Windows");
+			 caps.setCapability("os_version", "7");
+			 caps.setCapability("resolution", "1024x768");
+			 caps.setCapability("browserstack.debug", "true");
+			 caps.setCapability("browserstack.local", "true");
+			 caps.setCapability("browserstack.selenium_version", "2.47.1");
+			 caps.setCapability("acceptSslCerts", "true");
+			  driver = new RemoteWebDriver(new URL(URL), caps);
+		      browser="windows7IE10";
+		      driver.get(System.getProperty("BrandUrl"));
+		      brand = System.getProperty("Brand");
+		  
+
+		  	System.out.println("The String is " +brand);
+		      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		      return driver;
+		   
+		    
+		      
+		 } 
+		
 		
 
 		public WebDriver iPadMini() throws MalformedURLException  
