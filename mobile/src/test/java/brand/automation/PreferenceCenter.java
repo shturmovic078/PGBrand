@@ -95,7 +95,7 @@ public class PreferenceCenter {
 		public WebDriver safari9() throws MalformedURLException  
 		 {  
 		  
-			 System.out.println("Let me run in Windows 7 IE10");
+			 System.out.println("Let me run in Safari");
 			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 			 DesiredCapabilities caps = new DesiredCapabilities();
 			 caps.setCapability("browser", "Safari");
@@ -124,7 +124,7 @@ public class PreferenceCenter {
 		public WebDriver windows7IE11() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run in Windows 7 IE10");
+		 System.out.println("Let me run in Windows 7 IE11");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "IE");
@@ -153,7 +153,7 @@ public class PreferenceCenter {
 		public WebDriver windows7Chrome49() throws MalformedURLException  
 		 {  
 		  
-			 System.out.println("Let me run in Windows 7 Chrome49");
+			 System.out.println("Let me run in Windows 7 Chrome 49");
 			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 			 DesiredCapabilities caps = new DesiredCapabilities();
 			 caps.setCapability("browser", "Chrome");
@@ -182,7 +182,7 @@ public class PreferenceCenter {
 		public WebDriver windows7Firefox46() throws MalformedURLException  
 		 {  
 		  
-			 System.out.println("Let me run in Windows 7 Firefox46");
+			 System.out.println("Let me run in Windows 7 Firefox 46");
 			 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 			 DesiredCapabilities caps = new DesiredCapabilities();
 			 caps.setCapability("browser", "Firefox");
