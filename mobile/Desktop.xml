@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Preference Center">
-   <test name="Preference Center">
+<suite name="Desktop Screenshots IE or Ipad">
+   <test name="IE Screenshots">
    
       <parameter name="browser" value="windows7IE10"/> 
     
@@ -12,7 +12,7 @@
       
    </test>
    
-   <test name="Preference Center">
+   <test name="Ipad Screenshots">
    
    
       <parameter name="browser" value="iPadMini"/> 
