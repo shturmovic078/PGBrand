@@ -4,7 +4,7 @@
 <suite name="Desktop Screenshots IE or Ipad">
    <test name="IE Screenshots">
    
-      <parameter name="browser" value="windows7IE10"/> 
+      <parameter name="browser" value="windows7IE11"/> 
     
       <classes>
          <class name="brand.automation.Desktop" />
@@ -12,15 +12,7 @@
       
    </test>
    
-   <test name="Ipad Screenshots">
    
-   
-      <parameter name="browser" value="iPadMini"/> 
-      <classes>
-         <class name="brand.automation.Desktop" />
-      </classes>
-      
-   </test>
    
   
    
