@@ -31,6 +31,7 @@ public class TestCase {
     capability.setCapability("platform",platform);
     capability.setCapability("browserName", browser);
     capability.setCapability("browserVersion", version);
+    capability.setCapability("browserstack.local", "true");
     capability.setCapability("project", "P1");
     capability.setCapability("build", "1.0");
     driver = new RemoteWebDriver(
