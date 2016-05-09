@@ -22,7 +22,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class TestCase {
 
   private WebDriver driver;
-
+  public String name;
 
   @BeforeClass
   @org.testng.annotations.Parameters(value={"browser","version","platform"})
@@ -37,17 +37,19 @@ public class TestCase {
     driver = new RemoteWebDriver(
       new URL("https://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub"),
       capability);
+    name=(capability.getBrowserName());
   }
 
   @Test
   public void testSimple() throws Exception {
 	  driver.get(System.getProperty("BrandUrl"));
+	 
     System.out.println("Page title is: " + driver.getTitle());
-   
+    System.out.println("Browser is: " + name);
     driver = new Augmenter().augment(driver);
     File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     try {
-      FileUtils.copyFile(srcFile, new File("Screenshot.png"));
+      FileUtils.copyFile(srcFile, new File(name + "/Screenshot.png"));
     } catch (IOException e) {
       e.printStackTrace();
     }
