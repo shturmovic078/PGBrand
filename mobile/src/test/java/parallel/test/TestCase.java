@@ -49,7 +49,7 @@ public class TestCase {
     driver = new Augmenter().augment(driver);
     File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     try {
-      FileUtils.copyFile(srcFile, new File(local + name + "/Screenshot.png"));
+      FileUtils.copyFile(srcFile, new File(local + "/"+ name + "/Screenshot.png"));
     } catch (IOException e) {
       e.printStackTrace();
     }
