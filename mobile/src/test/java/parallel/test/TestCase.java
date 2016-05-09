@@ -40,7 +40,7 @@ public class TestCase {
 
   @Test
   public void testSimple() throws Exception {
-    driver.get("http://www.google.com");
+	  driver.get(System.getProperty("BrandUrl"));
     System.out.println("Page title is: " + driver.getTitle());
    
     driver = new Augmenter().augment(driver);
