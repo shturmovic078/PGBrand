@@ -18,9 +18,9 @@
     </classes>
   </test> <!-- Test -->
   <test name="ThirdTest">
-  <parameter name="browser" value="safari"/>
-  <parameter name="version" value="9.0"/>
-  <parameter name="platform" value="MAC"/>
+  <parameter name="browser" value="IE"/>
+  <parameter name="version" value="10.0"/>
+  <parameter name="platform" value="WINDOWS"/>
     <classes>
       <class name="parallel.test.TestCase"/>
     </classes>
