@@ -23,7 +23,7 @@ public class TestCase {
 
   private WebDriver driver;
   public String name;
-
+  public String local=(new java.io.File("").getAbsolutePath());
   @BeforeClass
   @org.testng.annotations.Parameters(value={"browser","version","platform"})
   public void setUp(String browser, String version, String platform) throws Exception {
@@ -49,7 +49,7 @@ public class TestCase {
     driver = new Augmenter().augment(driver);
     File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     try {
-      FileUtils.copyFile(srcFile, new File(name + "/Screenshot.png"));
+      FileUtils.copyFile(srcFile, new File(local + name + "/Screenshot.png"));
     } catch (IOException e) {
       e.printStackTrace();
     }
