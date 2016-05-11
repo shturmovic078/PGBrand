@@ -240,7 +240,7 @@ public class OralbUKLinks {
 	 public WebDriver browserIE10() throws MalformedURLException  
 	 {  
 	  
-		 System.out.println("Let me run mobileGalaxyS3");
+		 System.out.println("Let me run IE10 Windows 7");
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "IE");
@@ -249,6 +249,7 @@ public class OralbUKLinks {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
