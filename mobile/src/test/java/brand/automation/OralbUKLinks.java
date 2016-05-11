@@ -163,7 +163,7 @@ public class OralbUKLinks {
 		        
 		        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        
-		        name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "desktop.png";
+		        name=""+ counter + "_" + "desktop.png";
 		        takeScreenPortrait(name);
 		        System.out.println("Image Name " +name);
 		        counter+=1;
