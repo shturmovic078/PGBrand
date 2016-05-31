@@ -9,7 +9,7 @@
   
  <classes>
       
-      <class name="appium.mobile.AllProducts1" />
+      <class name="appium.mobile.QuickView" />
     
    </classes> 
       

@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import java.io.Console;
 import java.io.File;
@@ -58,7 +59,7 @@ public class QuickView {
 	    }
 	    return true;
 	}
-	
+
   public static void getQuick(String typeProduct, String quickView) throws InterruptedException, IOException
   {
 	  System.out.println("Let me look at Quick View from Search Page");
@@ -185,6 +186,7 @@ public class QuickView {
 
   
   @BeforeMethod
+  @BeforeTest
   public void beforeClass() throws MalformedURLException, InterruptedException {
 	  
 	  System.out.println("Let me run in Firefox");
@@ -196,6 +198,7 @@ public class QuickView {
 		 caps.setCapability("os_version", "7");
 		 caps.setCapability("resolution", "1024x768");
 		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("browserstack.selenium_version", "2.48.2");
 		 //caps.setCapability("browserstack.selenium_version", "2.47.1");
 		 caps.setCapability("acceptSslCerts", "true");

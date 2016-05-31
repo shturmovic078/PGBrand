@@ -71,53 +71,11 @@ public class OralbUKLinks {
 		  
 		  
 		  
-		  if (browser.equals("safari")) {
-			  driver=browserSafari();
-			  csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("Chrome")) {
-			  driver=browserChrome();
-			  csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("firefoxMAC")) {
+		if (browser.equals("firefoxMAC")) {
 			  driver=browserFirefoxYasomin();
 			  csvFileToRead = data2;
 			}
-		  
-		  else if (browser.equals("browserIE11")) {
-			  driver=browserIE11();
-			   csvFileToRead = data2;
-			}
-		  else if (browser.equals("browserWindows8IE10")) {
-			  driver=browserWindows8IE10();
-			   csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("browserWindows10IE11")) {
-			  driver=browserWindows10IE11();
-			   csvFileToRead = data2;
-			}
-		  else if (browser.equals("browserIE10")) {
-			  driver=browserIE10();
-			   csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("firefox")) {
-			  driver=browserFirefox();
-			   csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("browserIpad")) {
-			  driver=browserIpad();
-			   csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("browserAndroidTablet")) {
-			  driver=browserAndroidTablet();
-			   csvFileToRead = data2;
-			}
+		
 
 	
 		  
