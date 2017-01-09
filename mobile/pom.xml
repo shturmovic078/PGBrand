@@ -136,6 +136,8 @@
                
                 
                 <configuration>
+                 <BrandUrl>${value}</BrandUrl>
+                 <Browser>${value}</Browser>
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>
