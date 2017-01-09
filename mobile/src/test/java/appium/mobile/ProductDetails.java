@@ -44,7 +44,7 @@ public class ProductDetails {
   @Test(priority=1)
   public  static void variantName() throws  InterruptedException, IOException {
 	  
-	  System.out.println("Let me look at the drop down");
+	  System.out.println("Let me look at the drop down 1");
 	  
 	  WebElement pack_size=driver.findElement(By.id("phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft"));
 	  List<WebElement> pack  = pack_size.findElements(By.tagName("option"));
