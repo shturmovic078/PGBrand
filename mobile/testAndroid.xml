@@ -9,7 +9,7 @@
   
  <classes>
       
-      <class name="appium.mobile.ForgotPassword" />
+      <class name="appium.mobile.LoginTestCase" />
     
    </classes> 
       

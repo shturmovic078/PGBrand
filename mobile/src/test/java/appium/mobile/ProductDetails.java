@@ -42,7 +42,7 @@ public class ProductDetails {
 	 
 	  
   @Test(priority=1)
-  public  static void variantName() throws InterruptedException, IOException {
+  public  static void variantName() throws  InterruptedException, IOException {
 	  
 	  System.out.println("Let me look at the drop down");
 	  

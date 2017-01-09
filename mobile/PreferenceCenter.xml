@@ -7,7 +7,7 @@
       
     <parameter name="browser" value="browserWindows8IE10"/>
       <classes>
-         <class name="brand.automation.PreferenceCenter" />
+         <class name="brand.appium.mobileLoginTestCase" />
       </classes>
       
    </test>
