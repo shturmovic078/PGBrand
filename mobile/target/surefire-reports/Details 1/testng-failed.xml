@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Details 1]">
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="appium.mobile.ProductDetails">
+        <methods>
+          <include name="variantName"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- appium.mobile.ProductDetails -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Details 1] -->

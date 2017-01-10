@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="18.606" tests="0" errors="0" skipped="0" failures="0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="20.43" errors="0" skipped="0" tests="1" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -23,31 +23,30 @@
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/yd/57jw1ntj1kx40zqx2qfm71q9smmy7h/T/"/>
-    <property name="BrandUrl" value="http://author.oralbuk.pgsitecore.com/en-gb/search-page?term=Oralb"/>
-    <property name="line.separator" value="&#10;"/>
+    <property name="BrandUrl" value="http://author.dawn-dish.pgsitecore.com/en-us/products/by-line/apple-blossom-scent"/>
+    <property name="line.separator" value="
+"/>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/agolubev1/Desktop/BrandAutomation/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2828494736798049567.tmp"/>
+    <property name="classworlds.conf" value="/Users/agolubev1/Desktop/BrandAutomation/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8390629956604415735.tmp"/>
     <property name="sun.jnu.encoding" value="MacRoman"/>
     <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.10.5"/>
-    <property name="Brand" value="OralbUK"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/agolubev1"/>
     <property name="user.timezone" value="America/New_York"/>
     <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
     <property name="java.specification.version" value="1.6"/>
-    <property name="file.encoding" value="MacRoman"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="agolubev1"/>
     <property name="java.class.path" value="/Users/agolubev1/Downloads/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -DsuiteFile=products.xml -DBrandUrl=http://author.oralbuk.pgsitecore.com/en-gb/search-page?term=Oralb -DBrand=OralbUK -DBrowser=firefox42 -B test -X"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -DsuiteFile=ProductDetails.xml -DBrandUrl=http://author.dawn-dish.pgsitecore.com/en-us/products/by-line/apple-blossom-scent -B test"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -62,10 +61,83 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="mrj.version" value="1070.1.6.0_65-468"/>
-    <property name="suiteFile" value="products.xml"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="Browser" value="firefox42"/>
+    <property name="suiteFile" value="ProductDetails.xml"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
+  <testcase time="20.43" classname="appium.mobile.ProductDetails" name="variantName">
+    <failure message="Unable to find element with id == phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;207-254-10-26&apos;, ip: &apos;207.254.10.26&apos;, os.name: &apos;windows&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0b2fa06a-940e-432e-afe4-6f0cd2cf1ce5
+*** Element info: {Using=id, value=phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft}
+Command duration or timeout: 20.41 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;10.37.11.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: ebd272452d94d8657f0b7796b342f0411c856bec
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=true, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=ebd272452d94d8657f0b7796b342f0411c856bec, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=about:blank, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to find element with id == phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;207-254-10-26&apos;, ip: &apos;207.254.10.26&apos;, os.name: &apos;windows&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0b2fa06a-940e-432e-afe4-6f0cd2cf1ce5
+*** Element info: {Using=id, value=phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft}
+Command duration or timeout: 20.41 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;10.37.11.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: ebd272452d94d8657f0b7796b342f0411c856bec
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, enablePersistentHover=true, ignoreZoomSetting=false, ie.ensureCleanSession=true, enableElementCacheCleanup=true, browserName=internet explorer, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=ebd272452d94d8657f0b7796b342f0411c856bec, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=false, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=about:blank, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at appium.mobile.ProductDetails.variantName(ProductDetails.java:49)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;10.37.11.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
+	... 18 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with id == phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;207-254-10-26&apos;, ip: &apos;207.254.10.26&apos;, os.name: &apos;windows&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=about:blank, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0b2fa06a-940e-432e-afe4-6f0cd2cf1ce5
+*** Element info: {Using=id, value=phdesktopbody_0_phdesktopproductprimarycontentarea_0_ProductVariantsLeft1_ddlVariantionSelectorLeft}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;usnycpww4255.global.publicisgroupe.net&apos;, ip: &apos;10.37.11.101&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.rebuildServerError(ErrorHandler.java:227)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:107)
+	... 18 more
+</failure>
+    <system-out>Let me run in Chrome 55
+The brand is null
+Let me look at the drop down 1
+</system-out>
+    <system-err>log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager).
+log4j:WARN Please initialize the log4j system properly.
+</system-err>
+  </testcase>
 </testsuite>
